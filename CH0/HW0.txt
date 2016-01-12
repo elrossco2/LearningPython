@@ -1,0 +1,5 @@
+The first homework assignment, due by next class 1/14/16, is to post to the Discussion Board. 
+
+After you get an account on github.com, follow the instructions from class to clone the CS3003 class repo: LearnPython. Open the DiscussionBoard file and post a comment. Say a few words about yourself--your major and what you hope to get out of this class (a few sentances will do.) Save the changes and stage them with git add followed by git commit. Push the changes up onto your remote repo and issue a pull request (asking me to murge the changes.)
+
+If you have trouble don't worry too much. We'll get it figured out.
