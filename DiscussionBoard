@@ -38,6 +38,14 @@ This pulled down and merged all the stuff I didn't have yet.
 
 --1/17/16, studentRoss: Next time in class we'll talk about git branch and git merge. 
 This should help us understand working with remotes using git fetch and git pull.
+Although there won't be a test on the Ch1 to Ch3 reading in Pro Git. 
+The test will be that you are able to 
+submit your programming exercise homework as a
+>git push origin master
+followed by a pull request. Then get the latest class materials using git fetch followed by git merge, 
+or more simply do
+>git pull cs3003 master
+where cs3003 is the tag you gave to the URL of the class repo.
 
 
 --January 14th, 2016. Jonathan Martin
@@ -54,6 +62,8 @@ My major is Agriculture in Plant and Soil Science. I Plan on graduating this com
 
 January 14, 2016. Joshua Spencer:
 I do not really do much other than procrastinate and play video games. I will be graduating from high-school this semester. I intend to create video games upon graduating college.
+
+
 
 
 
