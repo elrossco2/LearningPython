@@ -3,21 +3,69 @@ Dr. Burrows, initial post 1/11/16:
 Post comments and questions about the class. 
 Need help with homework or have a solution for others? Post it here.
 
-Once you finish typing your post on your local copy, submit it as a pull request. By the way, most things git needed by us is covered in chapter 2: Git-Basics of the free textbook Pro Git at http://git-scm.com/book/en/v2.
+Once you finish typing your post on your local copy, submit it as a pull request. By the way, most things git needed by us is covered in chapter 2: 
+Git-Basics of the free textbook Pro Git at http://git-scm.com/book/en/v2.
 
 Be sure and be specific enough when you ask a question that other people can understand what the problem is. 
+
+An un-graded homework assignment that everyone should do is to read chapters 1 through 3 of the free textbook
+Pro Git at http://www.git-scm.com/book/en/v2
+
+It seems like we should edit and view this DiscussionBoard with gitpad or wordpad since notepad doesn't seem to display the new-lines properly all the time. 
+Or any Linux native editor should do fine.
 
 --------------------------------------------------------------------------
 Start new student posts below here:
 --------------------------------------------------------------------------
 
+--January 13th, 2016. Evan Comeau:
+I play baseball for UAM, set to graduate this semester. I plan to teach math in university some day. 
+I'm a mathematics major with a teaching and learning minor.
+ 
+
+--1/14/16, studentRoss: This note was posted from the computer lab on Comp-06.
+first I created and logged into the studentRoss account on github.com
+then I forked https://github.com/elrossco2/LearnPython.git to get a copy at https://github.com/studentRoss/LearnPython.git
+Then I launched the Git Shell and did:
+
+> git clone https://github.com/studentRoss/LearnPython.git
+> cd LearnPython
+> git remote add elrossco https://github.com/elrossco2/LearnPython.git
+> git remote -v
+> git pull elrossco master
+
+This pulled down and merged all the stuff I didn't have yet.
+
+--1/17/16, studentRoss: Next time in class we'll talk about git branch and git merge. 
+This should help us understand working with remotes using git fetch and git pull.
+Although there won't be a test on the Ch1 to Ch3 reading in Pro Git. 
+The test will be that you are able to 
+submit your programming exercise homework as a
+>git push origin master
+followed by a pull request. Then get the latest class materials using git fetch followed by git merge, 
+or more simply do
+>git pull cs3003 master
+where cs3003 is the tag you gave to the URL of the class repo.
 
 
-January 13th, 2016. Evan Comeau:
-I play baseball for UAM, set to graduate this semester. I plan to teach math in university some day. I'm a mathematics major with a teaching and learning minor. 
+--January 14th, 2016. Jonathan Martin
+I Go to UAM and enjoy chemistry.
+
+
+--(should have date,) Barry Boney;
+My major is Agriculture in Plant and Soil Science. I Plan on graduating this coming up December.
+
+
+
+
+
 
 January 14, 2016. Joshua Spencer:
 I do not really do much other than procrastinate and play video games. I intend to create video games upon graduating college.
+
+
+
+
 
 
 
