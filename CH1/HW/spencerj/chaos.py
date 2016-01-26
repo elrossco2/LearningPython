@@ -7,15 +7,3 @@ def unstable():
         x=3.9*x*(1-x) #this is a comment.
         print(x)
 unstable()
-
-
-
-
-
-
-
-
-
-
-
-
