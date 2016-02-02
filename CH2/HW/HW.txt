@@ -5,3 +5,4 @@ CH 2, Homwork Due 1/26/16. Programming Exercises, page 53 of the textbook:
 2. Modify the ave2.py program to find the average of three exam scores.
 
 5. Modify the futval.py program so that the number of years for the investment is also a user input. Make sure to change the final message to reflect the correct number of years.
+
