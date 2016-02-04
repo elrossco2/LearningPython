@@ -3,9 +3,7 @@
 # by: Susan Computewell
 
 def main():
-    
-    print("this is a friendly introduction to the celsius to fahrenheit converter")
-    
+    print("This program will convert the temperature from Celsius to Fahrenheit.")
     celsius = eval(input("What is the Celsius temperature? "))
     fahrenheit = 9/5 * celsius + 32
     print("The temperature is", fahrenheit, "degrees Fahrenheit.")

@@ -4,14 +4,16 @@
 
 def main():
     print("This program calculates the future value")
-    print("of an investment for a given number of years.")
+    print("of an investment.")
 
     principal = eval(input("Enter the initial principal: "))
     apr = eval(input("Enter the annual interest rate: "))
-    year = eval(input("Enter the lenth in years for your investment: "))
-    for i in range(year):
+    years = eval(input("Enter the number of years the investment will last:"))
+    
+    for i in range(years):
         principal = principal * (1 + apr)
-
-    print("The value in", year , "years is $", principal)
-
+    if years>1:
+        print("The value in " , years , " years is:", principal)
+    else:
+        print("The value in " , years , " year is:", principal)
 main()
