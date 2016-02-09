@@ -1,0 +1,23 @@
+from graphics import *
+def main():
+    win = GraphWin()
+    shape = Rectangle(Point(50,50),Point(100,100))
+    shape.setOutline("red")
+    shape.setFill("red")
+    shape.draw(win)
+    center = Point(100,100)
+    for i in range(10):
+        p = win.getMouse()
+        c = shape.getCenter()
+        dx = p.getX() - c.getX()
+        dy = p.getY() - c.getY()
+        #Point(p.getX(),p.getY()).draw(win)
+        newShape = Rectangle(Point(p.getX(),p.getY()),Point(p.getX()+50,p.getY()+50))
+        newShape.setOutline("red")
+        newShape.setFill("red")
+        newShape.draw(win)
+    exmsg = Text(center, 'Please click again to exit.')
+    exmsg.draw(win)
+    m = win.getMouse()
+    win.close()
+main()
