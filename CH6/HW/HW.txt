@@ -1,0 +1,6 @@
+Due 2/25/16:
+
+Write a program that reads in the list of Student info from the "UserNames.prn" file.
+After reading in the data, the program should print out the average of all the Prelim Scores.
+
+Also do CH6 Exercises 11, 12, 13 and 14 on page 198.
