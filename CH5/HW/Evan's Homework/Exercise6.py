@@ -6,3 +6,5 @@ def main():
     for i in name.lower():
         total = total+ord(i)-96
     print("\nYour lucky number is:",total)
+
+main()

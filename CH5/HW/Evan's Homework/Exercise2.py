@@ -5,3 +5,4 @@ def main():
     scale = ["F","F","D","C","B","A"]
     print ("The letter grade of the score is: ", scale[score])
 
+main()

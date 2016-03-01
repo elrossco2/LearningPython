@@ -21,3 +21,5 @@ def main():
     Text(Point(100,180),'Click again to quit!').draw(win)
     win.getMouse()
     win.close()
+
+main()
