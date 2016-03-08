@@ -18,3 +18,6 @@ def main():
     sumTotal = sumList(nums)     
      
     print('The sum of your numbers is {}.'.format(sumTotal))
+
+
+main()
