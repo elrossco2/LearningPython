@@ -7,3 +7,6 @@ def main():
 		i = i * x
 		count = count + 1
 	print (count)
+
+
+main()
