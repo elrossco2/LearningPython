@@ -61,7 +61,7 @@ class simBox:
 
     def wall_pressure(self, dt):
         #print("wall pressure")
-        L = self.XR - self.X0
+        L = self.YT - self.Y0
         p0 = self.p0/(dt*L*L)
         pR = self.pR/(dt*L*L)
         self.p0 = 0
@@ -72,8 +72,8 @@ class simBox:
         #print('get kinetic pressure')
         sqrsum = 0
         for p in pList:
-            sqrsum = sqrsum + p.m*p.vx**2
-        L = self.XR - self.X0
+            sqrsum = sqrsum + p.m*p.vx**2 
+        L = self.YT - self.Y0
         kp = sqrsum/L**3
         return kp
 
