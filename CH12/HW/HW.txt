@@ -1,0 +1,1 @@
+The CH12 HW is basically exercise 5 on p. 424. Write an interactive program to play dice Craps. You can use modules from the craps simulation you wrote for CH9. You can start from the given code for Dice Poker and (using modules from the craps simulation to impliment the conditions and rules of the game) modify it into video Craps.
