@@ -19,6 +19,7 @@ def main():
     except SyntaxError:
         print("Enter only numbers. Not $ signs")
     
-
+    except NameError:
+        print("Enter only numbers. Not letters.")
 
 main()
