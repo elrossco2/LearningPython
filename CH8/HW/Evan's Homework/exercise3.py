@@ -4,7 +4,7 @@ def main():
 	i = eval(input("What is the initial investment?: "))
 	h = 2 * i
 	while i <= h:
-		i = i * x
+		i = i + i * x #fixed by Burrows 4/12/16
 		count = count + 1
 	print (count)
 
