@@ -2,6 +2,7 @@ from math import sin,cos,radians
 from graphics import *
 from time import sleep
  
+#I couldn't seem to get it to work. Instructor Burrows 4/12/16
  
 class Projectile:
     '''Projectile class copy from the book'''

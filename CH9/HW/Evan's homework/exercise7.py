@@ -25,3 +25,6 @@ def main():
                     win = win + 1
 
     print ("The probability of winning a game of craps is", win/b)
+
+
+main()

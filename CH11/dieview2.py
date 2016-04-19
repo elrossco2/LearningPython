@@ -16,8 +16,7 @@ class DieView:
         self.foreground = "black" # color of the pips
         self.psize = 0.1 * size   # radius of each pip
         hsize = size / 2.0        # half of size
-        offset = 0.6 * hsize      # distance from center
-                                    to outer pips
+        offset = 0.6 * hsize      # distance from center to outer pips
 
         # create a square for the face
         cx, cy = center.getX(), center.getY()
@@ -28,17 +27,17 @@ class DieView:
         rect.setFill(self.background)
 
         # Create 7 circles for standard pip locations
-        self.pips = [ self.__makePip(cx-offset, cy-offset),
-                      self.__makePip(cx-offset, cy),
-                      self.__makePip(cx-offset, cy+offset),
-                      self.__makePip(cx, cy),
-                      self.__makePip(cx+offset, cy-offset),
-                      self.__makePip(cx+offset, cy),
-                      self.__makePip(cx+offset, cy+offset) ]
+        self.pips = [ self.__makePip(cx-offset, cy-offset), #0
+                      self.__makePip(cx-offset, cy),        #1
+                      self.__makePip(cx-offset, cy+offset), #2
+                      self.__makePip(cx, cy),               #3
+                      self.__makePip(cx+offset, cy-offset), #4
+                      self.__makePip(cx+offset, cy),        #5
+                      self.__makePip(cx+offset, cy+offset) ]#6
 
-        # Create a table for which pips are on for each value 
-        self.onTable = [ [], [3], [2,4], [2,3,4], 
-            [0,2,4,6], [0,2,3,4,6], [0,1,2,4,5,6] ]
+        # Create a table for which pips are on for each value
+                       # 0    1     2       3         4          5              6 
+        self.onTable = [ [], [3], [2,4], [2,3,4], [0,2,4,6], [0,2,3,4,6], [0,1,2,4,5,6] ]
 
         self.setValue(1)
 
@@ -59,3 +58,11 @@ class DieView:
         # Turn the appropriate pips back on
         for i in self.onTable[value]:
             self.pips[i].setFill(self.foreground)
+
+def main():
+    win = GraphWin('test', 300,300)
+    d= DieView(win, Point(100,100), 50)
+    d.setValue(3)
+
+if __name__ == '__main__':
+    main()
