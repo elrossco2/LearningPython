@@ -1,0 +1,62 @@
+Final Project Ideas:
+
+Note that if you don't like the choices here you can invent your own final project problem. Just type up the problem statement and submit it for instructor approval as a Git pull request.
+
+Project Idea 1:  Student Group Constructor:
+Write a program that places students into peer groups. The students are read in from an input file, placed into groups based on specific criteria, then a nicely formatted list of peer groups is written to an output file. 
+
+
+Background:
+
+Physics Education Research (PER) has shown that active learning approaches, such as peer instruction (PI), promote in class learning of physics ideas and concepts better then passive teaching approaches. In the traditional passive method of teaching physics, the instructor lectures while the students take notes. Typically the lecture goes on for the entire class and there are relatively few questions (usually asked by the same few brave students) and little interaction between students and/or instructor. If students take good notes, they can go home and study them, along with the class-textbook, and learn the material; this is a tried and true, classic method of instruction.
+
+There are many active teaching approaches promoted by PER. The method I favor is known as peer instruction (PI). In PI, concepts are presented in mini-lectures, after which students are given multiple-choice questions that immediately test and challenge their understanding of the physics ideas just presented. Using electronic clickers students answer the questions and the instructor gets real-time feedback on overall student comprehension of the current topic. If a majority of the class isn't choosing the correct answer, students discuss the question for a minute or two in PI groups. After a chance to rethink their answer, the class revotes. 
+
+An important assumption, inherent to PI, is that on average, students with the correct answer will show and convince their peers how they made the best choice. The basic idea behind PI is that a student who understands the physics concepts will make the strongest, most logical arguments and, more times than not, will lead their peers to a proper way of thinking about the concepts under consideration. 
+
+For PI to be highly effective, the selection of peer group’s members could be important. The size of each peer group should be large enough to promote dynamic discussion but not so large that one or more members are likely to feel excluded. Let's say that PI groups with between 3 to 5 members is a good range for promoting helpful group discussions on physics concepts. Dynamic discussion and debate is more likely to happen if, from the start, group members don't all agree on the answer. Therefore it's good to have a mix of strong students with more challenged students--the idea here is that the stronger students will be able to help students who are struggling. This not only promotes learning for students needing help but the stronger student gains a deeper understanding of the material though the act of explaining it to peers. Another consideration is that studies have shown that females, placed in groups with a male majority, tend to participate less in group discussions. Thus an all-female or all-male group should be fine, a group of 3 females and one male should be OK. On the other hand, a group of 3 males and 1 female should probably be avoided. An additional hypothesis we can make is that people with similar majors should be able to relate well to each other. Thus having two or more people in a group with the same major, such as art, math, biology, etc., could be likely to promote learning in the group.
+
+Problem Statement:
+
+Write a Python program--PI Group Generator--that generates discussion groups for PI in the classroom. The program should read in a file containing a list of the students enrolled in a physics class. The following list (stored as UserNames.prn) of fictitious students for a fictitious class, entitled Physics Impossible, will be the test list to feed into our PI-Group-Generator program. 
+
+         Name          Gender     Prelim Score        Major
+  Alice Mooresmarter     f             97              math
+  Billy Bangalootoo      m             92            science
+    Bob Biggislap        m             74              art
+  Chris Cannonmannor     m             20            science
+   Cindy Supershop       f             81            science
+   Elmer Thudpucker      m             37              math
+  Gina Graphsbetter      f             85              art
+   Guido Van Rossum      m             87              art
+      John Zelle         m            100            science
+    Richy Cashmore       m             65            business
+    Ruby Diamonds        f             42            business
+    Sammy Sunpower       m             90            science
+  Susan Computewell      f             99            science
+    Tiffany Towers       f             78              art
+    Tina Turbulent       f             35              art
+    Tommy Gunsmith       m             82              math
+     Tony Tornado        m             41            science
+  Veronica Versache      f             89              math
+   Zenna Starpower       f             79              art
+
+
+The program should read in the file UserNames.prn (printed above) and place the students in to PI groups likely to promote debate, discussion and learning. The program should group strong students (i.e. those with higher Prelim Scores) with challenged students (lower Prelim Scores). The members of each group should typically be all same gender or at least (if possible) have a female majority. To a lesser extent groupings of like majors should be favored but with a lower precedence then grouping by student strength and gender. There should never be less than 3 students in any PI group. Define the following integers:
+	NS = the total number of students in the class (= 19 in 	the test case.)
+	NG = the number of PI groups to split the class into.
+	NM = the number of members per group.
+Let NG determine NM so that NM = int(NS/NG); in this case, the last group has NS%NG students in it, where NS is an odd number. For example, in the test case NS = 19. If NG = 6, then int (19/6) = 3 and 19%6 = 1; this would split the class into 6 groups of 3 students and 1 group of 1 student which is unacceptable since no PI group should possess less than 3 students. On the other hand, if NG = 5, int(19/5) = 3 and 19%5 = 4; this would split the class up into 5 groups of 3 students and 1 group of 4 students--which is acceptable. Perhaps 4 groups of 4 and 1 group of 3 would be best?
+
+The program should output a file (say PIgroups.txt or whatever) that lists the PI groups resulting from the program's selection algorithm. Perhaps something like:
+	group 1 = {Tony Tornado, Tommy Gunsmith, John Zelle, Chris Cannonmannor}
+	group 2 = {Alice Mooresmarter, Gina Graphsbetter, Tina Turbulent, Bob Biggislap}
+	group 3 = {..., }
+	.
+	group 5 = ...
+
+A more advanced version of the program could also output a nicely formatted graphical screen showing the PI groups with student names printed together and surrounded by boxes or circles etc. labeled to indicate the group number. This graphical version could be used as a class handout to help students identify which group they are assigned to. 
+
+
+ 
+
