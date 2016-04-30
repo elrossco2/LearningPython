@@ -1,4 +1,4 @@
-from Prob5graphicsinterface import GraphicsInterface
+from graphicsInterface import GraphicsInterface
 from crapsApp import CrapsApp
 
 
