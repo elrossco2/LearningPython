@@ -1,0 +1,11 @@
+This program reads an input file that will have the necessary information from a pitcher on it, 
+and calculate the percentage that the pitcher throws a certain pitch in each count, and the 
+percentage that each pitch is thrown for a strike. 
+
+The user will fill out the given Microsoft excel chart, then copy the information to the given
+input file. From there, the program will read the input file and give the information on the 
+given output file. 
+
+The user can then copy the newly-found information onto a different file for storage. 
+
+A copy of information is included in the input file from a UAM pitcher for testing. 

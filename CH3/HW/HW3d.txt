@@ -1,0 +1,11 @@
+CH 3, HW. Due 1/1/16:
+
+Do Programming Exercises 11 and 14 (on pages 77 and 78.)
+
+11. Write a program to find the sum of the first n natural numbers, where the value of n is provided by the user
+
+14. Write a program that finds the average of a series of numbers entered by the user. As in the previous problem, the program will first ask the user how many numbers there are. Note: the average should awlays be a float, even if the user inputs are all int.
+
+prompt user for total number of units 
+it the will prompt input of each of those numbers
+and print a sum total.

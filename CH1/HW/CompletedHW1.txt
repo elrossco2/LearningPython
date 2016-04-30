@@ -1,0 +1,3 @@
+Ch 1, HW, Exercise 4, p. 24
+
+4. Modify the chaos program so that it prints 20 values instead of 10.
