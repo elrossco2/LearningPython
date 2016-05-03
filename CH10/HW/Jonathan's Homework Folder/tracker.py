@@ -8,55 +8,27 @@ Created on Mon May  2 21:08:21 2016
 from graphics import *
 from projectile import Projectile
 
+
 class Tracker:
-    
-    def __init__(self, win, obj):
-        
-        self.x = obj.getX() + 20
-        self.y = obj.getY() + 20
-        self.c = Circle(Point(self.x,self.y),10)
-        #self.c.draw(win)
-        self.update(self.x,self.y,self.c,win,obj)
-        #self.c.undraw
-    def update(self,x,y,c,win,obj):
-        c.draw(win)
-        self.x1 = obj.getX()
-        self.y1 = obj.getY()
-        
-        self.c.move((self.x1-self.x),(self.y1-self.y))
-        self.x = self.x1
-        self.y = self.y1
-        return self.x, self.y
-        
-''' class Tracker:
     def __init__(self, window, objToTrack):
-        #window = window
+        self.winx = window
         #self.winx.draw(winx)
-        #obj = objToTrack
-        #self.xpos = objToTrack.getX()
-        #self.ypos = objToTrack.getY()
-        xpos = 10*objToTrack.getX()+20
-        ypos = 10*objToTrack.getY()+20
-        center = Point(xpos,ypos)
-        circ = Circle(center,10)
-        circ.draw(window)
-        self.updater(window,objToTrack)
+        self.obj = objToTrack
+        self.obj.getX() = xpos
+        self.obj.getY() = ypos
+        
     
    
    
-    def updater(self,window,objToTrack):
+    def updater(self):
         #draws circle
-        #self.xpos = objToTrack.getX()
-        #self.ypos = objToTrack.getY()
-        #center = Point(xpos,ypos)
-        #self.circ = Circle(center,5)
-        #self.circ.fillOutline("red")
-        xpos = 10*objToTrack.getX()+20
-        ypos = 10*objToTrack.getY()+20
-         #circ.undraw()
-        circ = Circle(Point(xpos,ypos),20)
-        circ.undraw()
-        circ.draw(window)
+        obj.getX() = xpos
+        obj.getY() = ypos
+        center = Point(xpos,ypos)
+        self.circ = Circle(center,3)
+        self.circ.fillOutline("red")
+        self.circ.draw(winx)
+     
         
         # window is a graphWin and objToTrack is an object whose
         #    position is to be show in the window. objToTrack is 
@@ -77,16 +49,16 @@ class Tracker:
         
         
         
-        def window(self,window):
+        '''def window(self,window):
             self.win = GraphWin(window,420,420)
             self.win.setBackground("white")
             
             self.win.getMouse()
-            self.win.close()
+            self.win.close()'''
         
          #this was my first attempt.
         
-def objToTrack(self,x,y):
+        '''def objToTrack(self,x,y):
           
                 
         def update(self,x,y):
