@@ -21,6 +21,7 @@ def main():
     #print(std)
     infile = open("UserNames.prn")
     header = infile.readline()
+    #print(header)
     fnames = []
     lnames = []
     genders = []
@@ -42,7 +43,7 @@ def main():
         genders.append(gender)
         scores.append(score)
         majors.append(major)
-    print(fnames[0],lnames[0],genders[0],scores[0],majors[0])
+    #print(fnames[0],lnames[0],genders[0],scores[0],majors[0])
     #std1 = Student(fnames[0],lnames[0],genders[0],scores[0],majors[0])
     #std1.getName()
     #std1.getGender()
