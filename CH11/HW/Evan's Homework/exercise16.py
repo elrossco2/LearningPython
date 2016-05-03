@@ -56,5 +56,5 @@ def main():
     print ("The smallest value in the list is", calculations.min())
     print ("The largest value in the list is", calculations.max())
     
-    
+main()   
     

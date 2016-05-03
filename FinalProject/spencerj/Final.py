@@ -29,7 +29,7 @@ def main():
     students = []
     for i in range(19):
         students.append(i)
-    #print(students)
+    print(students)
     for line in infile:
         line = line.split()
         name1 = line[0]
@@ -42,7 +42,7 @@ def main():
         genders.append(gender)
         scores.append(score)
         majors.append(major)
-    #print(fnames[0],lnames[0],genders[0],scores[0],majors[0])
+    print(fnames[0],lnames[0],genders[0],scores[0],majors[0])
     #std1 = Student(fnames[0],lnames[0],genders[0],scores[0],majors[0])
     #std1.getName()
     #std1.getGender()

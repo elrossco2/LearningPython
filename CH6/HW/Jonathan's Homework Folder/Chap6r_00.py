@@ -26,7 +26,8 @@ def main():
         #print(totalgrade)
         totalgrade = totalgrade + grade
         names.write(totalgrade)
-    print("The prelim scores average is: ", int(totalgrade/counter))
+    #print("The prelim scores average is: ", int(totalgrade/counter))
+    print("The prelim scores average is: ", str(totalgrade/counter))
 main()
    
     

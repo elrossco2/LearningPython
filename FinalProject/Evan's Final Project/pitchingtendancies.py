@@ -265,3 +265,5 @@ def threeballstwostrikes():
     threeballstwostrikesslstrikeperc = int(splitthreeballstwostrikesstrike[4]) / int(splitthreeballstwostrikes[4])
 
     return threeballstwostrikesfbperc, threeballstwostrikesfbstrikeperc, threeballstwostrikescbperc, threeballstwostrikescbstrikeperc, threeballstwostrikeschperc, threeballstwostrikeschstrikeperc, threeballstwostrikesslperc, threeballstwostrikesslstrikeperc
+
+main()
